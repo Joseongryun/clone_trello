@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Trello</title>
 </head>
 
@@ -22,13 +23,13 @@
                 <div class="listTitleWrap">
                     <div class="title">List name</div>
                     <form class="titleEdit">
-                        <input type="text" value="Project Name" placeholder="Project Name...">
+                        <input type="text" value="List Name" placeholder="Project Name...">
                     </form>
                 </div>
                 <div class="cardWrap">
                     <div class="card">
                         <div class="cardContent">card content</div>
-                        <div class="cardContent">card content</div>
+                        <div class="cardContent">cardcardcardcardcardcardcardcardcard content</div>
                         <div class="cardContent">card content</div>
                         <div class="cardContent">card content</div>
                     </div>
@@ -37,7 +38,7 @@
                     <div class="addLabel">+ Add another card</div>
                     <form class="addCard">
                         <textarea name="" id="" cols="30" rows="10" placeholder="card content..."></textarea>
-                        <button class="btn btn-green">Add Card</button>
+                        <button class="btn btn-green">Add Card</button><span class="close">&times</span>
                     </form>
                 </div>
             </div>
@@ -45,8 +46,8 @@
         <div id="listAddWrap">
             <div id="addLabel">+ Add another list</div>
             <form id="addList">
-                <p><input type="input" placeholder="Enter list title..."></p>
-                <p><button class="btn btn-green">Add List</button> <span>&times</span></p>
+                <input type="input" placeholder="Enter list title...">
+                <button class="btn btn-green">Add List</button><span class="close">&times</span>
             </form>
         </div>
     </div>
