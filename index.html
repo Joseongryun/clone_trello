@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
     <title>Trello</title>
 </head>
 
@@ -15,41 +17,21 @@
         <div id="projectTitleWrap">
             <div id="title">Project Name</div>
             <form id="titleEdit">
-                <input type="text" value="Project Name" placeholder="Project Name...">
+                <input id="projectTitle" type="text" placeholder="Project Name...">
+                <input type="submit" style="display: none">
             </form>
         </div>
         <div id="listWrap">
-            <div class="list">
-                <div class="listTitleWrap">
-                    <div class="title">List name</div>
-                    <form class="titleEdit">
-                        <input type="text" value="List Name" placeholder="Project Name...">
-                    </form>
-                </div>
-                <div class="cardWrap">
-                    <div class="card">
-                        <div class="cardContent">card content</div>
-                        <div class="cardContent">card content</div>
-                        <div class="cardContent">card content</div>
-                        <div class="cardContent">card content</div>
-                    </div>
-                </div>
-                <div class="cardAddWrap">
-                    <div class="addLabel">+ Add another card</div>
-                    <form class="addCard">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="card content..."></textarea>
-                        <button class="btn btn-green">Add Card</button><span class="close">&times</span>
-                    </form>
-                </div>
-            </div>
+
         </div>
         <div id="listAddWrap">
             <div id="addLabel">+ Add another list</div>
             <form id="addList">
-                <input type="text" placeholder="Enter list title...">
-                <button class="btn btn-green">Add List</button><span class="close">&times</span>
+                <input id="addListTitle" type="text" placeholder="Enter list title...">
+                <button class="btn btn-green">Add List</button><span class="close" id="addListClose">&times</span>
             </form>
         </div>
+
     </div>
 </div>
 
