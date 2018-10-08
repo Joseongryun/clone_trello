@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/script.js"></script>
     <title>Trello</title>
 </head>
@@ -22,7 +23,23 @@
             </form>
         </div>
         <div id="listWrap">
-
+            <div class="list" style="">
+                <div class="listTitleWrap">
+                    <div class="title">sd</div>
+                    <form class="titleEdit">
+                        <input class="listTitle" type="text" placeholder="Project Name...">
+                    </form>
+                </div>
+                <div class="cardWrap">
+                    <div class="cardContent">sd</div><div class="cardContent">sd</div><div class="cardContent">sds</div></div>
+                <div class="cardAddWrap">
+                    <div class="addLabel" style="">+ Add another card</div>
+                    <form class="addCard" style="display: none;">
+                        <textarea name="" class="addCardContent" cols="30" rows="10" placeholder="card content..."></textarea>
+                        <button class="btn btn-green addCardBtn">Add Card</button><span class="close" id="addCardClose">×</span>
+                    </form>
+                </div>
+            </div>
         </div>
         <div id="listAddWrap">
             <div id="addLabel">+ Add another list</div>

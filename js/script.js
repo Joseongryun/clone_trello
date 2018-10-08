@@ -13,7 +13,7 @@ $(document).ready(function () {
     pjTitleEdit.submit(function (e) {
         e.preventDefault();
         let title = $("#projectTitle").val();
-        if(title == ""){
+        if (title == "") {
             title = "New Project";
         }
         pjTitle.html(title);
@@ -52,6 +52,10 @@ $(document).ready(function () {
         content.val("");
         $(this).hide();
         addCardLabel.show();
+        $(".cardWrap").sortable({
+            connectWith: ".cardWrap",
+            placeholder: "card-placeholder"
+        });
     });
 
     $(document).on("click", ".addCardBtn", function (e) {
@@ -97,13 +101,25 @@ $(document).ready(function () {
         listTitle.val("");
         addListForm.hide();
         addListLabel.show();
+        $(".cardWrap").sortable({
+            connectWith: ".cardWrap",
+            placeholder: "card-placeholder"
+        });
     });
 
-    $("#addListClose").click(function (e){
+    $("#addListClose").click(function (e) {
         $("#addListTitle").val("");
         addListForm.hide();
         addListLabel.show();
-    })
+    });
 
+    $("#listWrap").sortable({
+        placeholder: "list-placeholder",
+        handle: ".listTitleWrap",
+    });
 
+    $(".cardWrap").sortable({
+        connectWith: ".cardWrap",
+        placeholder: "card-placeholder"
+    });
 });

@@ -1,6 +1,8 @@
 $nav-color: #6F777B;
 $bg-color: #838C91;
 $list-color: #DFE3E6;
+$list-placeholder-color: #737B7F;
+$card-placeholder-color: #D6DCE0;
 $font-color: #2F4E60;
 $btn-color: #5AAC44;
 $thumb-color: #A9ADB0;
@@ -60,6 +62,31 @@ input, textarea {
 .btn-green {
   background: $btn-color;
   color: white;
+}
+
+.card-placeholder {
+  width: 250px;
+  height: 33px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: $card-placeholder-color;
+  margin-bottom: 12px;
+}
+
+.list-placeholder {
+  width: 270px;
+  height: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: $list-placeholder-color;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.ui-sortable-helper {
+  transform: skew(-5deg, 5deg) !important;
 }
 
 .wrapper {
@@ -177,6 +204,7 @@ nav {
     }
 
     .cardWrap {
+      min-height: 10px;
       max-height: 663px;
       overflow-y: auto;
       margin-bottom: 10px;

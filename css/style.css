@@ -43,6 +43,28 @@ input:focus, textarea:focus {
   background: #5AAC44;
   color: white; }
 
+.card-placeholder {
+  width: 250px;
+  height: 33px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #D6DCE0;
+  margin-bottom: 12px; }
+
+.list-placeholder {
+  width: 270px;
+  height: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #737B7F;
+  margin-right: 15px;
+  display: inline-block; }
+
+.ui-sortable-helper {
+  transform: skew(-5deg, 5deg) !important; }
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -135,6 +157,7 @@ nav {
           #listWrap .list .listTitleWrap .titleEdit input::placeholder {
             color: #2F4E60; }
     #listWrap .list .cardWrap {
+      min-height: 10px;
       max-height: 663px;
       overflow-y: auto;
       margin-bottom: 10px; }
